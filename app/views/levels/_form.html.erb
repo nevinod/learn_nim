@@ -1,0 +1,14 @@
+<%= form_with model: level do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.label :score %>
+    <%= form.text_field :score %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

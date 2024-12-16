@@ -1,0 +1,17 @@
+<h1>View Level</h1>
+
+<div id="level">
+  <div>
+    <%= @level.name %>
+  </div>
+  <div>
+    <%= @level.score %>
+  </div>
+</div>
+
+<%= link_to "Back", levels_path %>
+
+<%= button_to "Delete", @levels, method: :delete, data: {
+  turbo_confirm: "Are you sure?"
+} %>
+

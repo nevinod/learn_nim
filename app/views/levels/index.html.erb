@@ -1,0 +1,12 @@
+<h1>levels</h1>
+
+<div id="levels">
+  <% @levels.each do |level| %>
+    <div>
+      <span>
+        <a href="/levels/<%= level.id %>"><%= level.name %></a>
+        <a href="/levels/<%= level.id %>/edit">Edit</a>
+      </span>
+    </div>
+  <% end %>
+</div>
